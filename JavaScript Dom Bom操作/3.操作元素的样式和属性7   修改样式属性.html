@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div {
+			position: absolute;
+			right: 500px;
+		}
+		#tb {
+			width: 100px;
+		}
+		#gb {
+			position:absolute;
+			top: 0;
+			right: 100px;
+			width: 20px;
+
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="gb.jpg" id = 'gb'>
+		<img src="tb.jpg" id = "tb">
+	</div>
+	
+	<script type="text/javascript">
+		var gb = document.getElementById('gb');
+		var tb = document.getElementById('tb');
+		var div = document.querySelector('div');
+		gb.onclick = function() {
+			div.style.display = 'none';
+		}
+	</script>
+</body>
+</html>

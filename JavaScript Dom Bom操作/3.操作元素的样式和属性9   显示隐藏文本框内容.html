@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input {
+			color:grey;
+		}
+	</style>
+</head>
+<body>
+	<input type="`" name="" value="手机">
+	<script type="text/javascript">
+		var input = document.querySelector('input');
+		input.onfocus = function() {
+			if (this.value === '手机') {
+			this.value = '';
+		}
+			this.style.color = 'black';
+		}
+		input.onblur = function() {
+			if (this.value === "") {
+			this.value = "手机"
+			
+		}
+		this.style.color = 'grey';
+		}
+	</script>
+</body>
+</html>

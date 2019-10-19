@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	//弹出输入框（propt)输入数字
+	//输入12分别弹出不同的输入框，然后在弹出余额框
+	//输入3直接弹出余额框
+	//输入4弹出alert
+	
+
+    /*var sum = 100;
+    for (var num = 0;num < 4;) {
+    	var num = prompt('请输出您要的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+ 		if (num == '1') {
+ 			var cun = prompt('请输入您要存的钱数：');
+ 			sum += parseFloat(cun);
+ 			alert('余额为' + sum);
+ 		} else
+ 		if (num == '2') {
+ 			var qu = prompt('请输入您要取的钱数：');
+ 			sum -= parseFloat(qu);
+ 			alert('您的余额为：' + sum);
+ 		} else 
+ 		if (num == '3') {
+ 			alert('您的余额为：' + sum)
+ 		}
+    }
+    alert('正在退出……')*/
+
+    var num = 0;
+    var sum = 100;
+    while (num != '4') {
+    	var num = prompt('请输出您要的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+    	switch (num) {
+    		case '1':
+    		var cun = prompt('请输入您要存的钱数：');
+ 			sum += parseFloat(cun);
+ 			alert('余额为' + sum);
+ 			break;
+ 			case '2':
+ 			var qu = prompt('请输入您要取的钱数：');
+ 			sum -= parseFloat(qu);
+ 			alert('您的余额为：' + sum);
+ 			break;
+ 			case '3':
+ 			alert('您的余额为：' + sum);
+
+    	}
+    }
+    alert('正在退出……')
+</script>
+</body>
+</html>

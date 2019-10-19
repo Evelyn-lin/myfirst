@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div></div>
+	<p>我是文字
+		<span>123</span>
+	</p>
+<script type="text/javascript">
+	//innerText 和 innerHTML的区别
+	//1.innerText 不识别html标签	非标准
+	var div = document.querySelector('div');
+	// div.innerText = '<strong>今天是：2019<strong>';
+
+	//2.innerHTML 识别html标签	W3C标准
+	div.innerHTML = '<strong>今天是：2019<strong>';
+	//这两个属性是可读写的	可以获取元素里面的内容
+	var p = document.querySelector('p');
+	console.log(p.innerText);
+	console.log(p.innerHTML);
+</script>
+</body>
+</html>

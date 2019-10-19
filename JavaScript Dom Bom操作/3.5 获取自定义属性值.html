@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 class="asd" index="231" id="sa">1231231232</h1>
+<script type="text/javascript">
+	//获取属性两种方法
+	//1.element.属性名 获取内置属性值
+	//2.element.getAttribute('属性名')  获取自定义属性值
+	var h1 = document.querySelector('h1');
+	console.log(h1.className);
+	console.log(h1.index);
+	console.log(h1.getAttribute('index'));//自定义属性值
+
+
+	//修改属性两种方法
+	//1.element.属性名 = '属性值';
+	//2.element.setAttribute('属性名','属性值')
+	h1.className = 'hele';
+	h1.setAttribute('class','heng');
+
+	//删除属性的方法 element.removeAttribute('属性名')
+	h1.removeAttribute('id');
+
+</script>
+</body>
+</html>

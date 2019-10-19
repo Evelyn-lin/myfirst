@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id = 'btn'>唐伯虎</button>
+<div>123</div>
+<script type="text/javascript">
+	//点击一个按钮，弹出对话框
+	//1.事件是由三部分组成   事件源 事件类型 事件处理程序
+	//（1）事件源  事件被触发的对象 谁 按钮
+	var btn = document.getElementById('btn');
+	//（2）事件类型 如何触发 什么事件 如 鼠标点击
+	//（3）事件处理程序  通过一个函数赋值的方式
+	btn.onclick = function() {
+		alert('点秋香');
+	}
+	// var div = document.getElementsByTagName('div');
+	var div = document.querySelector('div');
+	div.onclick = function() {
+		console.log('我被选中了');
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		//1.创建一个电脑对象，该对象要有颜色、重量、品牌、型号；可以看电影。。。。
+		/*function Computer() {
+			this.color = color;
+			this.weight = weight;
+			this.brand = brand;
+			this.type = type;
+			this.watch = function() {
+				console.log('看电影')
+			}
+		}*/
+
+
+		//2.创建一个按钮对象，该对象中要包含宽、高，背景颜色和点击行为
+
+		/*function Button() {
+			this.width = width;
+			this.height = height;
+			this.bgcolor = bgcolor;
+			this.onclick = function() {
+				alert('这是一个按钮');
+			}
+		}*/
+
+		//3.写一个函数，实现反转任意数组
+		/*function sverve(arr) {
+			var newArr = [];
+			for (var i = arr.length - 1; i >= 0; i--) {
+				newArr[newArr.length] = arr[i]
+			}
+			return newArr;
+		}
+
+		var arr1 = [1,2,3,4];
+		var s1 = sverve(arr1);
+		console.log(s1);*/
+
+		//4.写一个函数，实现对数字数组的排序(从小到大)
+		function score(arr) {
+			for (var i = 0; i < arr.length - 1; i++) {
+				for (var j = 0; j <= arr.length - i - 1; j++) {
+					if (arr[j] > arr[j+1]) {
+						var temp = arr[j];
+						arr[j] = arr[j+1];
+						arr[j+1] = temp;
+					}
+				}
+			}
+			return arr;
+		}
+		var arr1 = [1,5,234,3,64,2];
+		var s1 = score(arr1);
+		console.log(s1);
+	</script> 
+</head>
+<body>
+
+</body>
+</html>

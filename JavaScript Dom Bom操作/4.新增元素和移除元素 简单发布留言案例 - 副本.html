@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div {
+			width: 300px;
+			margin: auto;
+		}
+		textarea {
+			height: 100px;
+			padding-bottom: 0;
+			vertical-align: inherit;
+		}
+		button {
+			vertical-align: bottom;
+		}
+		li {
+			background-color: pink;
+			margin-bottom: 3px;
+		}
+		ul {
+			margin-left: 0;
+			padding: 0;
+		}
+		a {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<textarea></textarea>
+		<button>发布</button><br>
+		<br>
+		<ul>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var text = document.querySelector('textarea');
+		var but = document.querySelector('button');
+		var ul = document.querySelector('ul');
+		but.onclick = function() {
+			if (text.value == '') {
+				alert('您输入的值为空');
+			} else {
+				var li = document.createElement('li');
+				li.innerHTML = text.value + "<a href='javascript:;'>删除</a>";
+				ul.insertBefore(li,ul.children[0]);
+				text.value = '';
+			}
+			var as = document.querySelectorAll('a');
+			for (var i = 0; i < as.length; i++) {
+				as[i].onclick = function() {
+				ul.removeChild(this.parentNode);
+			}
+		}
+		}
+
+	</script>
+</body>
+</html>

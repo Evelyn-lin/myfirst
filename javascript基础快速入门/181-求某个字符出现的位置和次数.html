@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		//查找字符串中所有o出现的位置以及次数
+		var str = 'abcoefoxyozzopp';
+		//金林作答
+		var a = 0;
+		var i = 0;
+		var newArr = Array();
+		while (true) {
+			if (str.indexOf('o', a) === -1) {
+				break;
+			} else {
+				newArr.push(str.indexOf('o', a));
+				a = str.indexOf('o', a) + 1;
+				i++;
+			}
+		}
+		console.log(i);
+		console.log(newArr);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

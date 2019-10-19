@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function getArrMax(arr) {
+			var arrMax = arr[0];
+			for (var i = 1; i < arr.length; i++) {
+				if (arr[i] > arrMax) {
+					arrMax = arr[i];
+				}
+			}
+			return arrMax;
+		}
+		// console.log(getArrMax([5,2,99,101,67,77]));
+		//在实际开发里面，我们经常用一个变量来接收函数的返回值
+		var re = getArrMax([5,2,99,101,67,77]);
+		console.log(re)
+	</script>
+</head>
+<body>
+
+</body>
+</html>

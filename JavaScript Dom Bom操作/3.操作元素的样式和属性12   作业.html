@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div {
+			width: 800px;
+			margin:0 auto;
+		}
+		input {
+			height: 15px;
+			float: left;
+			margin: 10px;
+			color: #999;
+			border: 1px solid #999;
+		}
+		.focus {
+			height: 15px;
+			float: left;
+			margin: 10px;
+			color: #333;
+			border: 1px solid pink;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<input type="text" name="" id="yhm" value="邮箱/ID/手机号">
+	<input type="text" name="" id="password" value="密码">
+</div>
+<script type="text/javascript">
+	var yhm = document.getElementById('yhm');
+	var password = document.getElementById('password');
+	yhm.onfocus = function() {
+		this.value = '';
+		this.className = 'focus';
+
+
+	}
+	yhm.onblur = function() {
+		if (this.value == '') {
+			this.value = '邮箱/ID/手机号';
+		}
+		this.className = '';
+
+	}
+	password.onfocus = function() {
+		this.value = '';
+		this.type = 'password';
+		this.className = 'focus';
+
+
+	}
+	password.onblur = function() {
+		if (this.value == '') {
+			this.value = '密码';
+			this.type = 'text'
+		}
+		this.className = '';
+
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id = 'demo'>你好呀</p>
+	<p>你也好呀</p>
+	<ol>
+		<li id = 'li1'>1156</li>
+		<li>2</li>
+		<li>3</li>
+	</ol>
+	<div class = 'box'>盒子</div>
+	<div class = 'box'>盒子</div>
+	<div class = 'box'>盒子</div>
+	<div class = 'box'>盒子</div>
+	<li>3434</li>
+	
+<script type="text/javascript">
+	//如何获取页面中的元素
+	//1.根据ID获取   document.getElemengtById('')
+	//2.根据标签名获取	document.getElementsByTagName('')  element.getElemengByTagName('')
+	//3.通过HTML5新增方法获取	i9以上才支持
+	//	document.getElementsByClassName('类名') 根据类名返回元素集合
+	//	document.querySelector('选择器') 根据选择器返回第一个元素对象
+	//	documen。querySelectorAll('选择器')	根据指定选择器返回
+	//4.特殊元素获取
+	//  1.获取body元素 document.body;
+	//	2.获取html元素 document.documengElement
+
+	/*var de = document.getElementById('demo');
+	console.log(de);*/
+	var ol = document.getElementsByTagName('ol');
+	var li = ol[0].getElementsByTagName('li');
+	// var box = document.getElementsByClassName('box');
+	var nac = document.querySelector('.box');
+	var li11 = document.querySelector('#li1');
+	var aclass = document.querySelectorAll('.box');
+	console.log(li);
+	// console.log(box);
+	console.log(nac);
+	console.log(li11);
+	console.log(aclass);
+</script>
+</body>
+</html>

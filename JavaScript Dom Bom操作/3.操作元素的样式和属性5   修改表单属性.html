@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		img {
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<button>按钮</button>
+	<input type="text" name="" value="输入内容">
+<script type="text/javascript">
+	var but = document.querySelector('button');
+	var input = document.querySelector('input');
+	but.onclick = function() {
+		input.value = '被点击了';
+		//禁用 disabled
+		this.disabled = true;
+		//this 只想的是时间函数的调用者
+	}
+</script>
+</body>
+</html>

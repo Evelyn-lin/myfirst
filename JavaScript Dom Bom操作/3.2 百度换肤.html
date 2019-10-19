@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		img {
+			width: 600px;
+		}
+		li {
+			display: inline-block;
+		}
+		ul {
+			width: 3000px;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><img src="1.jpg"></li>
+		<li><img src="2.jpg"></li>
+		<li><img src="3.jpg"></li>
+		<li><img src="4.jpg"></li>
+	</ul>
+<script type="text/javascript">
+	var imgs = document.querySelector('ul').querySelectorAll('img');
+	for (var i = 0; i < imgs.length; i++) {
+		imgs[i].onclick = function() {
+			document.body.style.backgroundImage = 'url(' + this.src + ')';
+		}
+	}
+</script>
+</body>
+</html>

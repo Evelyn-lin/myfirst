@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div {
+			background-color: pink;
+			width: 300px;
+			height: 300px;
+		}
+		.change {
+			background: purple;
+			margin-top: 100px;
+			font-size: 23px;
+		}
+	</style>
+</head>
+<body>
+	<div>文字</div>
+	<script type="text/javascript">
+		var div = document.querySelector('div');
+		div.onclick = function() {
+			div.className = 'change';
+		}
+	</script>
+</body>
+</html>

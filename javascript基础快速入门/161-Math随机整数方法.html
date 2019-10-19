@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function getRandom(min,max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min
+		}
+		var ran = getRandom(1,10);
+		/*do{
+				var num = prompt('请输入一个数字：');
+			if (num < ran) {
+				alert('数字小了，继续猜')
+			} else
+			if (num > ran) {
+				alert('数字大了，继续猜')
+			} else {
+				alert('猜对了！')
+			}
+		} while (num != ran)*/
+		
+		while (true) {
+			var num = prompt('请输入数字：');
+			if (num < ran) {
+				alert('数字小了，继续猜')
+			} else
+			if (num > ran) {
+				alert('数字大了，继续猜')
+			} else {
+				alert('猜对了！');
+				break;
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

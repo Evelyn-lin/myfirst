@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table {
+			width: 1000px;
+			margin: auto;
+			border-collapse: collapse;
+		}
+		thead {
+			background-color: purple;
+		}
+		td {
+			text-align: center;
+			color: blue;
+			font-size: 15px;
+			border-bottom: 1px solid #999;
+		}
+	</style>
+</head>
+<body>
+<table>
+	<thead>
+		<tr>
+			<th>代码</th>
+			<th>名称</th>
+			<th>最新公布净值</th>
+			<th>累计净值</th>
+			<th>前单位净值</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>003526</td>
+			<td>农银金辉3个月定期开放正确</td>
+			<td>1.075</td>
+			<td>1.079</td>
+			<td>1.074</td>
+		</tr>
+		<tr>
+			<td>003526</td>
+			<td>农银金辉3个月定期开放正确</td>
+			<td>1.075</td>
+			<td>1.079</td>
+			<td>1.074</td>
+		</tr>
+		<tr>
+			<td>003526</td>
+			<td>农银金辉3个月定期开放正确</td>
+			<td>1.075</td>
+			<td>1.079</td>
+			<td>1.074</td>
+		</tr>
+		<tr>
+			<td>003526</td>
+			<td>农银金辉3个月定期开放正确</td>
+			<td>1.075</td>
+			<td>1.079</td>
+			<td>1.074</td>
+		</tr>
+		<tr>
+			<td>003526</td>
+			<td>农银金辉3个月定期开放正确</td>
+			<td>1.075</td>
+			<td>1.079</td>
+			<td>1.074</td>
+		</tr>
+		<tr>
+			<td>003526</td>
+			<td>农银金辉3个月定期开放正确</td>
+			<td>1.075</td>
+			<td>1.079</td>
+			<td>1.074</td>
+		</tr>
+	</tbody>
+</table>
+<script type="text/javascript">
+	var trs = document.querySelector('tbody').querySelectorAll('tr');
+	for (var i = 0; i < trs.length; i++) {
+		trs[i].onmouseover = function() {
+			this.style.backgroundColor = 'pink';
+		}
+	
+		trs[i].onmouseout = function() {
+			this.style.backgroundColor = '';
+		}
+	}
+</script>
+</body>
+</html>
